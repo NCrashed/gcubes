@@ -1,0 +1,46 @@
+cabal-version:       3.0
+name:                gcubes
+version:             0.0.1.0
+synopsis:            Library that wants to be a simple gloss-like replacement for 3d scenes.
+description:
+  Library that wants to be a simple gloss-like replacement for 3d scenes. TODO: exand this.
+license:             MIT
+license-file:        LICENSE
+copyright:           2024 Anton Gushcha
+maintainer:          Anton Gushcha <ncrashed@protonmail.com>
+category:            Graphics
+build-type:          Simple
+extra-source-files:
+  README.md
+  CHANGELOG.md
+tested-with:
+    GHC == 9.10.1
+
+source-repository head
+  type: git
+  location: https://github.com/NCrashed/gcubes
+
+common warnings
+    ghc-options: -Wall
+
+library
+  import:           warnings
+  hs-source-dirs:      src
+  exposed-modules:
+    Graphics.Cubes
+  build-depends:
+      base ^>=4.20
+    -- , dependent-sum
+    -- , exception-transformers
+    -- , GLFW-b
+    -- , GPipe           >= 2.2.4    && < 2.3
+    -- , GPipe-GLFW      >= 1.4.1.1  && < 1.5
+    -- , lens            >= 4.10     && < 6
+    -- , linear          >= 1.20     && < 2
+    -- , mtl
+    -- , primitive
+    -- , ref-tf
+    -- , stm
+    -- , transformers
+    -- , vector          >= 0.10     && < 0.13
+  default-language: GHC2021

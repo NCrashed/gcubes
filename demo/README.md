@@ -1,0 +1,1 @@
+The demo of gcubes library that renderes several rotating cubes with directional lightning.
